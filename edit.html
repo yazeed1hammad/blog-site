@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Website - Edit Post</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Blog Website</h1>
+      <nav>
+        <a href="index.html">List Posts</a>
+        <a href="create.html">Create Post</a>
+        <a href="edit.html">Edit Post</a>
+      </nav>
+    </header>
+
+    <section id="edit-posts-list">
+      <h2>Edit Posts</h2>
+      <div id="edit-posts-container">
+        <!-- Posts with edit options will be dynamically generated here -->
+      </div>
+    </section>
+
+    <section id="edit-post">
+      <h2>Edit Post</h2>
+      <div>
+        <label for="edit-title">Title:</label>
+        <input type="text" id="edit-title" name="edit-title" />
+      </div>
+      <div>
+        <label for="edit-description">Description:</label>
+        <textarea id="edit-description" name="edit-description"></textarea>
+      </div>
+      <div>
+        <label for="edit-time">Time:</label>
+        <input type="text" id="edit-time" name="edit-time" readonly />
+        <button id="continue-timer">Continue</button>
+        <button id="stop-edit-timer">Stop</button>
+      </div>
+      <button id="save-edit">Save</button>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
